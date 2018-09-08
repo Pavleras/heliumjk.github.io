@@ -24,27 +24,15 @@ canonical: https://heliumjk.github.io
     margin: 45px 0;">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        {% for book in site.categories.books %}
+        <div class="col-md-4 d-flex">
           <div class="demo_img">
-            <a href="{{ BASE_PATH }}/headers.html" target="_blank"><img src="{{ BASE_PATH }}/assets/images/screenshot/headers.jpg" alt="">
-              <h3 class="demo-title">FACTFULNESS</h3>
+            <a href="{{ BASE_PATH }}/headers.html" target="_blank"><img src="{{ BASE_PATH }}/assets/images/screenshot/{{ book.img }}" alt="">
+              <h3 class="demo-title">{{ book.name }}</h3>
             </a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="demo_img">
-            <a href="{{ BASE_PATH }}/sliders.html" target="_blank"><img src="{{ BASE_PATH }}/assets/images/screenshot/sliders.jpg" alt="">
-              <h3 class="demo-title">365 DAYS OF SELF DISCIPLINE</h3>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="demo_img">
-            <a href="{{ BASE_PATH }}/navigations.html" target="_blank"><img src="{{ BASE_PATH }}/assets/images/screenshot/navigations.jpg" alt="">
-              <h3 class="demo-title">WAVE RIDER</h3>
-            </a>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

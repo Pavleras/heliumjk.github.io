@@ -1,0 +1,26 @@
+<section id="blog">
+  <div class="container">
+    <div class="col-md12 table-style3">
+      <div class="table-responsive mtb">
+        <table class="table table-hover">
+          <thead>
+          </thead>
+          <tbody>
+            {% for training in site.categories.trainings %}
+            <tr>
+                <th scope="row">{{ training.dates }}</th>
+                <td>{{ training.name }}</td>
+                <td>{{ training.city }}</td>
+                <td>
+                  <button type="button" class="btn std-btn btn-sm btn-filled">
+                    Reserva
+                  </button>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

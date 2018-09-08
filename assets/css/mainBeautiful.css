@@ -39,10 +39,12 @@ a:hover,a:active,a:focus{
     text-decoration:none
 }
 p{
-    font-family:"Rubik",sans-serif;
+    font-family:Verdana,"Rubik",sans-serif;
     font-weight:400;
     font-size:14px;
     line-height:25px;
+    text-align: justify;
+    text-justify: inter-word;
     color:#444;
     letter-spacing:0px;
     margin-bottom:10px
@@ -189,6 +191,12 @@ strong{
 }
 #content{
     padding-bottom:60px
+}
+.mb-40{
+    margin-bottom:40px
+}
+.mb-50{
+    margin-bottom:50px
 }
 .mb-60{
     margin-bottom:60px
@@ -1908,7 +1916,11 @@ nav#menu span.fa.fa-bars:hover{
     cursor:pointer
 }
 .card-2 .card-block .description{
-    margin-top:5px
+    margin-top:5px;
+    max-width:100%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:14px
 }
 .card-2 .extra{
     max-width:100%;
@@ -2247,7 +2259,7 @@ nav#menu span.fa.fa-bars:hover{
     font-weight:400;
     margin-bottom:30px;
     font-size:16px;
-    font-family:"Rubik",sans-serif
+    font-family:Verdana,"Rubik",sans-serif
 }
 #carousel-area .carousel-item .carousel-caption h3{
     font-size:50px;
@@ -3603,7 +3615,7 @@ ul.nav-tabs li a{
 body{
     color:#444;
     background:#fff;
-    font-family:"Rubik",sans-serif;
+    font-family:Verdana,"Rubik",sans-serif;
     font-weight:400;
     font-size:14px;
     line-height:20px;
